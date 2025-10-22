@@ -1,0 +1,180 @@
+ <style>
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        /*Centraliza e limita a largura do conteúdo principal a 800px.*/
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cabeçalho*/
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            display: flex;/*organiza os elementos em linha: ícones sociais, menu e lupa.*/
+            align-items: center;
+            justify-content: space-between;/*distribui os três blocos horizontalmente, bloco esquerdo:.social-icons; Bloco central — <nav class="nav">; Bloco direito — .search-icon*/
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Redes sociais no canto esquerdo */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #888;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+/*Exibe os ícones lado a lado. Muda de cor (cinza → azul) ao passar o mouse.*/
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        /* Navegação central */
+        .nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+/*Links centrais (Home, Portfolio, Books, etc.). hover: adiciona efeito visual ao passar o mouse.*/
+        .nav a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+            font-size: 14px;
+        }
+
+        .nav a:hover {
+            color: #007ff;
+        }
+
+        /* Ícone de lupa (canto direito) */
+        .search-icon {
+            font-size: 20px;
+            color: #555;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .search-icon:hover {
+            color: #007bff;
+        }
+
+        /* Conteúdo principal */
+        .post {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .post img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .banner-img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .post h1 {
+            font-size: 1.8em;
+            margin: 0 0 10px;
+        }
+
+        .post h1 a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .post h1 a:hover {
+            color: #007bff;
+        }
+
+        .post h2 {
+            font-size: 1em;
+            color: #666;
+            margin: 0 0 20px;
+            font-weight: normal;
+        }
+
+        .post p {
+            text-align: justify;
+            margin: 10px 0;
+        }
+
+        .continue-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .continue-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        /* Responsividade, quando usado pelo celular ou tablet o layout muda*/
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+
+            }
+
+            .nav {
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .social-icons {
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+
+            .search-icon {
+                margin-top: 10px;
+            }
+        }
+    </style>
